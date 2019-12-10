@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+</head>
+<body>
+
+	<script>
+	
+	window.onload = function(){
+		function Person(name, gender){
+			let _name = name
+			let _gender = gender
+			let _age
+
+
+			this.getName = function(){
+				return _name
+			}
+			this.getGender = function(){
+				return _gender
+
+			}
+			this.setAge = function(age){
+				this._age = age
+
+			}
+			this.getAge = function(){
+				return this._age
+
+			}
+			this.toString =function(){
+				
+			}
+		}
+
+		let person = new Person('이순신', '남')
+
+
+
+
+		function member(){
+
+		}
+		let member1 = new member() /* 객체 */
+		let member2 =function(){  /* 메소드 */
+
+		}
+	}
+	/* 객체.프로퍼티 = 메소드 */
+	</script>
+	
+</body>
+</html>
