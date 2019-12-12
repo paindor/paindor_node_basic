@@ -1,3 +1,34 @@
+const service = {
+	vendingMachine(){
+		VendingMachine.prototype.setChange = function(change){_change = change}
+		VendingMachine.prototype.setItemNo = function(change){_itemNo = change}
+		VendingMachine.prototype.setItemList = function(change){_itemList = change}
+		VendingMachine.prototype.setItemNoList = function(change){_itemNoList = change}
+		VendingMachine.prototype.getChange = function(){return _change}
+		VendingMachine.prototype.getItemNo = function(){return _itemNo}
+		VendingMachine.prototype.getItemList = function(){return _itemList}
+		VendingMachine.prototype.getItemNoList = function(){return _itemNoList}
+	},
+	insertCoin(coin){
+		service.vendingMachine()
+		const vm = new VendingMachine()
+		vm.setChange(coin)
+		alert(`${vm.getChange()}원`)
+
+
+	},
+	selectItem(itemNo, quantity){
+
+	},
+	returnChage(){
+
+	},
+	handleOrder(quantity, price, itemName){
+		
+	}
+}
+
+
 function Initializer(){
 
 	this.vendingMachine = function(){
